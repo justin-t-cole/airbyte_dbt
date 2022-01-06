@@ -1,0 +1,22 @@
+Zip,City1,County,State1,Region
+04101,Portland,Cumberland,ME,Northeast
+04027,Lebanon,York,ME,Northeast
+04430,Millinocket,Penobscot,ME,Northeast
+33514,Center Hill,Sumter,FL,Southeast
+33935,Muce,Glades,FL,Southeast
+33040,Key West,Monroe,FL,Southeast
+54751,Menomonie,Dunn,WI,Midwest
+54011,El Paso,Pierce,WI,Midwest
+55043,Lakeland,Washington,MN,Midwest
+86321,Bagdad,Yavapai,AZ,Southwest
+85937,Snowflake,Navajo,AZ,Southwest
+85539,Miami,Gila,AZ,Southwest
+98851,Soap Lake,Grant,WA,Northwest
+99022,Medical Lake,Spokane,WA,Northwest
+99148,Loon Lake,Stevens,WA,Northwest
+99723,Utqiagvik,North Slope,AK,Alaska
+99762,Nome,Unorganized,AK,Alaska
+99686,Valdez,Chugach,AK,Alaska
+96777,Pāhala,Hawaiʻi,HI,Hawaii
+96761,Kapalua,Maui,HI,Hawaii
+96769,Puʻuwai,Kauai,HI,Hawaii

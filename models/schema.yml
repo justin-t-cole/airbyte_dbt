@@ -1,0 +1,62 @@
+version: 2
+
+models:
+  - name: New_England
+    description: This model extracts New England data from the larger dataset.
+    columns:
+      - name: gid
+        description: This field is a unique identifier.
+        tests:
+          - unique
+          - not_null
+      - name: bldg_fid
+        tests:
+          - unique
+          - not_null
+      - name: state
+        tests:
+          - accepted_values:
+              values: ['ME', 'NH','CT', 'MA', 'RI'] #For example purposes VT is left out
+      - name: state
+        tests:
+          - not_null
+          - relationships:
+              to: ref('region_table')
+              field: state1
+
+  - name: Small_Towns
+    description: This model filters out a selection of randomly-selected towns.
+    columns:
+      - name: gid
+        tests:
+          - unique
+          - not_null
+      - name: bldg_fid
+        tests:
+          - unique
+          - not_null
+      - name: city1
+        tests:
+          - accepted_values:
+              values: ['Portland', 'Lebanon','Millinocket', 'Center Hill', 'Muce', 'Key West', 'Menomonie', 'El Paso', 'Lakeland', 'Bagdad'] 
+      - name: city
+        tests:
+          - not_null
+          - relationships:
+              to: ref('random_small_towns')
+              field: city1
+
+  - name: Day_Filter
+    description: This returns only those results whose time stamps is on the selected day number.
+
+  - name: NE_and_SmallTowns
+    description: This model is not yet complete - it will union the New England towns and the other small towns.
+
+  - name: Size_Filter
+    description: This models narrows its prerequisite model output to buildings larger than the selected size.
+
+  - name: RetailStripMalls
+    description: This model filters the prerequisite model results to only display those that meet the other criteria and are a Retail Strip Mall
+
+  - name: StripMall_Day
+    description: This model wll join the results of the Day Filter and the Strip Mall filter based on building ID from two different source databases.

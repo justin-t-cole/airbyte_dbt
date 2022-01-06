@@ -1,0 +1,17 @@
+#this is a copy of the profiles document relevant to this project for troubleshooting purposes
+
+parquet:
+  target: dev
+  outputs:
+    dev:
+      type: athena
+      aws_profile_name: default
+      s3_staging_dir: s3://justin-dbt-testing/Airbyte2
+      region_name: us-east-1
+      work_group: primary
+      schema: parquet
+      tables:
+	- name:
+           identifier: "dbo/Aggregate_AuditLineItems/"
+           quoting:
+             identifier: true
