@@ -10,3 +10,4 @@ from {{ ref('Day_Filter') }}
 inner join {{ ref('RetailStripMalls') }}
 on {{ ref('RetailStripMalls') }}.bldg_id = {{ ref('Day_Filter') }}.bldg_id
 
+/*

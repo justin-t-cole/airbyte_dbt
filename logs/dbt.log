@@ -1,0 +1,238 @@
+2022-01-07 13:45:26.532866 (MainThread): Running with dbt=0.21.0
+2022-01-07 13:45:26.612335 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='/Users/justintcole/.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-01-07 13:45:26.615370 (MainThread): Tracking: tracking
+2022-01-07 13:45:26.631169 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093feee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10941b4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10941b370>]}
+2022-01-07 13:45:26.643231 (MainThread): Partial parsing not enabled
+2022-01-07 13:45:26.651911 (MainThread): Parsing macros/catalog.sql
+2022-01-07 13:45:26.653841 (MainThread): Parsing macros/adapters.sql
+2022-01-07 13:45:26.678141 (MainThread): Parsing macros/materializations/seed.sql
+2022-01-07 13:45:26.680167 (MainThread): Parsing macros/materializations/view.sql
+2022-01-07 13:45:26.682660 (MainThread): Parsing macros/materializations/table.sql
+2022-01-07 13:45:26.684004 (MainThread): Parsing macros/materializations/incremental.sql
+2022-01-07 13:45:26.695574 (MainThread): Parsing macros/materializations/snapshot.sql
+2022-01-07 13:45:26.695897 (MainThread): Parsing macros/core.sql
+2022-01-07 13:45:26.697751 (MainThread): Parsing macros/materializations/test.sql
+2022-01-07 13:45:26.701179 (MainThread): Parsing macros/materializations/helpers.sql
+2022-01-07 13:45:26.706106 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2022-01-07 13:45:26.706892 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2022-01-07 13:45:26.715163 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2022-01-07 13:45:26.732826 (MainThread): Parsing macros/materializations/seed/seed.sql
+2022-01-07 13:45:26.745168 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2022-01-07 13:45:26.746124 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2022-01-07 13:45:26.751260 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2022-01-07 13:45:26.761803 (MainThread): Parsing macros/materializations/common/merge.sql
+2022-01-07 13:45:26.768985 (MainThread): Parsing macros/materializations/table/table.sql
+2022-01-07 13:45:26.773097 (MainThread): Parsing macros/materializations/view/view.sql
+2022-01-07 13:45:26.776814 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2022-01-07 13:45:26.778651 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2022-01-07 13:45:26.779339 (MainThread): Parsing macros/etc/query.sql
+2022-01-07 13:45:26.779775 (MainThread): Parsing macros/etc/is_incremental.sql
+2022-01-07 13:45:26.780478 (MainThread): Parsing macros/etc/datetime.sql
+2022-01-07 13:45:26.784698 (MainThread): Parsing macros/etc/where_subquery.sql
+2022-01-07 13:45:26.785530 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2022-01-07 13:45:26.786679 (MainThread): Parsing macros/etc/get_custom_database.sql
+2022-01-07 13:45:26.787399 (MainThread): Parsing macros/adapters/common.sql
+2022-01-07 13:45:26.816758 (MainThread): Parsing macros/schema_tests/relationships.sql
+2022-01-07 13:45:26.817588 (MainThread): Parsing macros/schema_tests/not_null.sql
+2022-01-07 13:45:26.818131 (MainThread): Parsing macros/schema_tests/unique.sql
+2022-01-07 13:45:26.818751 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2022-01-07 13:45:26.905483 (MainThread): Acquiring new athena connection "model.airbyte_dbt.model1_test".
+2022-01-07 13:45:26.931028 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.931958 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.932778 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.933587 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.938020 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.938866 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.942450 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.943420 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.944245 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.945056 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.945864 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.949158 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.949282 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.950060 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.952592 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-01-07 13:45:26.952772 (MainThread): [WARNING]: Test 'test.airbyte_dbt.unique_New_England_gid.2161d3d211' (models/schema.yml) depends on a node named 'New_England' which was not found
+2022-01-07 13:45:26.952861 (MainThread): [WARNING]: Test 'test.airbyte_dbt.not_null_New_England_gid.8118bef777' (models/schema.yml) depends on a node named 'New_England' which was not found
+2022-01-07 13:45:26.952923 (MainThread): [WARNING]: Test 'test.airbyte_dbt.unique_New_England_bldg_fid.655f25e331' (models/schema.yml) depends on a node named 'New_England' which was not found
+2022-01-07 13:45:26.952980 (MainThread): [WARNING]: Test 'test.airbyte_dbt.not_null_New_England_bldg_fid.cb8a8182fa' (models/schema.yml) depends on a node named 'New_England' which was not found
+2022-01-07 13:45:26.953037 (MainThread): [WARNING]: Test 'test.airbyte_dbt.accepted_values_New_England_state__ME__NH__CT__MA__RI.5acdfeafcb' (models/schema.yml) depends on a node named 'New_England' which was not found
+2022-01-07 13:45:26.953095 (MainThread): [WARNING]: Test 'test.airbyte_dbt.not_null_New_England_state.b285ec8c7f' (models/schema.yml) depends on a node named 'New_England' which was not found
+2022-01-07 13:45:26.953150 (MainThread): [WARNING]: Test 'test.airbyte_dbt.relationships_New_England_state__state1__ref_region_table_.0525103524' (models/schema.yml) depends on a node named 'region_table' which was not found
+2022-01-07 13:45:26.953207 (MainThread): [WARNING]: Test 'test.airbyte_dbt.relationships_New_England_state__state1__ref_region_table_.0525103524' (models/schema.yml) depends on a node named 'New_England' which was not found
+2022-01-07 13:45:26.953262 (MainThread): [WARNING]: Test 'test.airbyte_dbt.unique_Small_Towns_gid.9f44b76807' (models/schema.yml) depends on a node named 'Small_Towns' which was not found
+2022-01-07 13:45:26.953318 (MainThread): [WARNING]: Test 'test.airbyte_dbt.not_null_Small_Towns_gid.3aa3e432fb' (models/schema.yml) depends on a node named 'Small_Towns' which was not found
+2022-01-07 13:45:26.953375 (MainThread): [WARNING]: Test 'test.airbyte_dbt.unique_Small_Towns_bldg_fid.c353ea7bbd' (models/schema.yml) depends on a node named 'Small_Towns' which was not found
+2022-01-07 13:45:26.953444 (MainThread): [WARNING]: Test 'test.airbyte_dbt.not_null_Small_Towns_bldg_fid.da6d5310cd' (models/schema.yml) depends on a node named 'Small_Towns' which was not found
+2022-01-07 13:45:26.953499 (MainThread): [WARNING]: Test 'test.airbyte_dbt.accepted_values_Small_Towns_city1__Portland__Lebanon__Millinocket__Center_Hill__Muce__Key_West__Menomonie__El_Paso__Lakeland__Bagdad.e12f10257f' (models/schema.yml) depends on a node named 'Small_Towns' which was not found
+2022-01-07 13:45:26.953556 (MainThread): [WARNING]: Test 'test.airbyte_dbt.not_null_Small_Towns_city.ddd09d3dd1' (models/schema.yml) depends on a node named 'Small_Towns' which was not found
+2022-01-07 13:45:26.953612 (MainThread): [WARNING]: Test 'test.airbyte_dbt.relationships_Small_Towns_city__city1__ref_random_small_towns_.cb2440f8d3' (models/schema.yml) depends on a node named 'random_small_towns' which was not found
+2022-01-07 13:45:26.953668 (MainThread): [WARNING]: Test 'test.airbyte_dbt.relationships_Small_Towns_city__city1__ref_random_small_towns_.cb2440f8d3' (models/schema.yml) depends on a node named 'Small_Towns' which was not found
+2022-01-07 13:45:26.958604 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project
+
+2022-01-07 13:45:26.961223 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a81b8baa-f6d7-4b73-906e-2ff03cb4a2b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094dbdf0>]}
+2022-01-07 13:45:26.964359 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-01-07 13:45:26.964644 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a81b8baa-f6d7-4b73-906e-2ff03cb4a2b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094dbd30>]}
+2022-01-07 13:45:26.964773 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 162 macros, 0 operations, 2 seed files, 0 sources, 0 exposures
+2022-01-07 13:45:26.965410 (MainThread): 
+2022-01-07 13:45:26.965595 (MainThread): Acquiring new athena connection "master".
+2022-01-07 13:45:26.965981 (ThreadPoolExecutor-0_0): Acquiring new athena connection "list_awscatalog".
+2022-01-07 13:45:26.971532 (ThreadPoolExecutor-0_0): Using athena connection "list_awscatalog".
+2022-01-07 13:45:26.971651 (ThreadPoolExecutor-0_0): On list_awscatalog: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "parquet", "target_name": "dev", "connection_name": "list_awscatalog"} */
+
+    select
+        distinct schema_name
+
+    from awscatalog.INFORMATION_SCHEMA.schemata
+  
+2022-01-07 13:45:26.971717 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-01-07 13:45:27.138171 (ThreadPoolExecutor-0_0): /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "parquet", "target_name": "dev", "connection_name": "list_awscatalog"} */
+
+    select
+        distinct schema_name
+
+    from awscatalog.INFORMATION_SCHEMA.schemata
+2022-01-07 13:45:27.462400 (ThreadPoolExecutor-0_0): Failed to execute query.
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/pyathena/common.py", line 307, in _execute
+    query_id = retry_api_call(
+  File "/opt/homebrew/lib/python3.9/site-packages/pyathena/util.py", line 84, in retry_api_call
+    return retry(func, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 423, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 360, in iter
+    return fut.result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 426, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/botocore/client.py", line 388, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/botocore/client.py", line 708, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the StartQueryExecution operation: The security token included in the request is expired
+2022-01-07 13:45:32.473139 (ThreadPoolExecutor-0_0): /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "parquet", "target_name": "dev", "connection_name": "list_awscatalog"} */
+
+    select
+        distinct schema_name
+
+    from awscatalog.INFORMATION_SCHEMA.schemata
+2022-01-07 13:45:32.566067 (ThreadPoolExecutor-0_0): Failed to execute query.
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/pyathena/common.py", line 307, in _execute
+    query_id = retry_api_call(
+  File "/opt/homebrew/lib/python3.9/site-packages/pyathena/util.py", line 84, in retry_api_call
+    return retry(func, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 423, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 360, in iter
+    return fut.result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 426, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/botocore/client.py", line 388, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/botocore/client.py", line 708, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the StartQueryExecution operation: The security token included in the request is expired
+2022-01-07 13:45:42.569875 (ThreadPoolExecutor-0_0): /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "parquet", "target_name": "dev", "connection_name": "list_awscatalog"} */
+
+    select
+        distinct schema_name
+
+    from awscatalog.INFORMATION_SCHEMA.schemata
+2022-01-07 13:45:42.641959 (ThreadPoolExecutor-0_0): Failed to execute query.
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/pyathena/common.py", line 307, in _execute
+    query_id = retry_api_call(
+  File "/opt/homebrew/lib/python3.9/site-packages/pyathena/util.py", line 84, in retry_api_call
+    return retry(func, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 423, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 360, in iter
+    return fut.result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 426, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/botocore/client.py", line 388, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/botocore/client.py", line 708, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the StartQueryExecution operation: The security token included in the request is expired
+2022-01-07 13:46:02.649473 (ThreadPoolExecutor-0_0): /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "parquet", "target_name": "dev", "connection_name": "list_awscatalog"} */
+
+    select
+        distinct schema_name
+
+    from awscatalog.INFORMATION_SCHEMA.schemata
+2022-01-07 13:46:02.730250 (ThreadPoolExecutor-0_0): Failed to execute query.
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/pyathena/common.py", line 307, in _execute
+    query_id = retry_api_call(
+  File "/opt/homebrew/lib/python3.9/site-packages/pyathena/util.py", line 84, in retry_api_call
+    return retry(func, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 423, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 360, in iter
+    return fut.result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 426, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/botocore/client.py", line 388, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/botocore/client.py", line 708, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the StartQueryExecution operation: The security token included in the request is expired
+2022-01-07 13:46:42.737100 (ThreadPoolExecutor-0_0): /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "parquet", "target_name": "dev", "connection_name": "list_awscatalog"} */
+
+    select
+        distinct schema_name
+
+    from awscatalog.INFORMATION_SCHEMA.schemata
+2022-01-07 13:46:43.020487 (ThreadPoolExecutor-0_0): Failed to execute query.
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/pyathena/common.py", line 307, in _execute
+    query_id = retry_api_call(
+  File "/opt/homebrew/lib/python3.9/site-packages/pyathena/util.py", line 84, in retry_api_call
+    return retry(func, *args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 423, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 360, in iter
+    return fut.result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 438, in result
+    return self.__get_result()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 390, in __get_result
+    raise self._exception
+  File "/opt/homebrew/lib/python3.9/site-packages/tenacity/__init__.py", line 426, in __call__
+    result = fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/botocore/client.py", line 388, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/botocore/client.py", line 708, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the StartQueryExecution operation: The security token included in the request is expired
+2022-01-07 13:46:43.021883 (ThreadPoolExecutor-0_0): Error running SQL: /* {"app": "dbt", "dbt_version": "0.21.0", "profile_name": "parquet", "target_name": "dev", "connection_name": "list_awscatalog"} */
+
+    select
+        distinct schema_name
+
+    from awscatalog.INFORMATION_SCHEMA.schemata
+  
+2022-01-07 13:46:43.022389 (ThreadPoolExecutor-0_0): Error running SQL: macro list_schemas
+2022-01-07 13:46:43.022756 (ThreadPoolExecutor-0_0): On list_awscatalog: Close
+2022-01-07 13:46:43.025967 (MainThread): Connection 'master' was properly closed.
+2022-01-07 13:46:43.026370 (MainThread): Connection 'list_awscatalog' was properly closed.
+2022-01-07 13:46:43.026648 (MainThread): Flushing usage events
+2022-01-07 13:46:43.409320 (MainThread): ctrl-c

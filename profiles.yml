@@ -2,16 +2,43 @@
 
 parquet:
   target: dev
+  type: athena
+  aws_profile_name: default
+  s3_staging_dir: s3://justin-dbt-testing/Airbyte2
+  region_name: us-east-1
+  work_group: primary
+  schema: parquet
+
+  sources:
+    dev:
+      tables:
+      - name:
+        identifier: "dbo/Aggregate_AuditLineItems/"
+        quoting:
+          identifier: true
+      - name:
+        identifier: "dbo/Aggregate_AuditSummaries_BI/"
+        quoting:
+          identifier: true
+      - name:
+        identifier: "dbo/Aggregate_AuditSummaries/"
+        quoting:
+          identifier: true
+      - name:
+        identifier: "dbo/Aggregate_ProjectLineItems_BI/"
+        quoting:
+          identifier: true
+      - name:
+        identifier: "dbo/Aggregate_ProjectSummaries_BI/"
+        quoting:
+          identifier: true
+
   outputs:
     dev:
       type: athena
+      database: awscatalog
       aws_profile_name: default
-      s3_staging_dir: s3://justin-dbt-testing/Airbyte2
+      s3_staging_dir: s3://justin-dbt-testing/Airbyte2/output
       region_name: us-east-1
       work_group: primary
       schema: parquet
-      tables:
-	- name:
-           identifier: "dbo/Aggregate_AuditLineItems/"
-           quoting:
-             identifier: true

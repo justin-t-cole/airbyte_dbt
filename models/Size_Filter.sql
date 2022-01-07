@@ -1,1 +1,0 @@
-Select * from {{ ref('New_England') }} where "in.sqft" > 1000

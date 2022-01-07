@@ -1,1 +1,0 @@
-select * from {{ ref('Size_Filter') }} where "in.building_type" = 'RetailStripmall'
